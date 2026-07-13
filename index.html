@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caffè Lucca — Füssen · In Italien inspiriert, im Allgäu zu Hause</title>
+  <meta name="description" content="Caffè Lucca in der Füssener Altstadt — italienische Kaffeekultur, Bohnen der Familienrösterei Basoni und la dolce vita an der Romantischen Straße. Ritterstraße 9, 87629 Füssen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topbar">
+    <a class="brand" href="#top"><img src="images/logo.jpeg" alt="Caffè Lucca Füssen — Basoni" /></a>
+    <span class="topbar-right">
+      <a href="#menu" data-i18n="nav.menu">Karte</a><a href="#story" data-i18n="nav.story">Story</a><a href="#moments" data-i18n="nav.moments">Momenti</a><a href="#fuessen">Füssen</a><a href="#visit" data-i18n="nav.visit">Besuch</a>
+      <span class="lang-switch" role="group" aria-label="Sprache / Language / Lingua">
+        <button data-lang="de" class="active">DE</button><button data-lang="en">EN</button><button data-lang="it">IT</button>
+      </span>
+    </span>
+  </nav>
+
+  <!-- ============ CINEMATIC HERO — scroll-scrubbed pour ============ -->
+  <section class="cinematic" id="hero">
+    <div class="sticky">
+      <img class="hero-poster" src="images/hero-poster.jpg?v=4" alt="Milch wird bei Caffè Lucca in einen Cappuccino gegossen" onerror="this.style.visibility='hidden'" />
+      <canvas></canvas>
+      <div class="vignette"></div>
+      <h1 class="sr-only">Caffè Lucca — Füssen</h1>
+      <div class="overlay">
+        <h2 class="reveal-line" data-in="0.06" data-out="0.36">Il caffè, fatto bene.</h2>
+        <h2 class="reveal-line" data-in="0.40" data-out="0.68" data-i18n="hero.l2">In Italien inspiriert.</h2>
+        <h2 class="reveal-line" data-in="0.72" data-out="1.00" data-i18n="hero.l3">Im Allgäu zu Hause.</h2>
+      </div>
+      <div class="scroll-hint">scroll ▾</div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <p class="reveal" data-i18n="statement.text">In Italien ist Kaffee kein Getränk, sondern eine Pause —<br />
+      eine kleine Zeremonie zwischen allem anderen.<br />
+      Seit 2015 halten wir diese Zeremonie<br />
+      mitten in der Füssener Altstadt lebendig.</p>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu" id="menu">
+    <header class="section-head reveal">
+      <h2 data-i18n="menu.title">La Carta</h2>
+      <p data-i18n="menu.sub">Selbstbedienung — bitte am Tresen bestellen. Grazie!</p>
+    </header>
+    <div class="menu-grid">
+      <div class="menu-card reveal">
+        <h3 data-i18n="menu.cafe">Caffè &amp; Heißes</h3>
+        <ul>
+          <li><span>Espresso / Macchiato</span><b>2,60 / 2,70&nbsp;€</b></li>
+          <li><span>Espresso Doppio / Doppio Macchiato</span><b>3,90 / 4,00&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.capp">Cappuccino normal / groß</span><b>3,60 / 4,70&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.crema">Caffe Crema normal / groß</span><b>3,20 / 4,20&nbsp;€</b></li>
+          <li><span>Flat White</span><b>4,60&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.milchkaffee">Milchkaffee</span><b>4,20&nbsp;€</b></li>
+          <li><span>Latte Macchiato</span><b>4,20&nbsp;€</b></li>
+          <li><span>Chai Latte</span><b>4,20&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.hotchoc">Heiße Schokolade</span><b>4,20&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.tea">Tee — verschiedene Sorten</span><b>3,20&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.lemonginger">Heiße Zitrone-Ingwer</span><b>3,80&nbsp;€</b></li>
+          <li class="menu-extra"><span data-i18n="menu.extras">Extras: Hafer, Soja, laktosefrei, Decaf, Sirup</span><b>+0,30&nbsp;€</b></li>
+        </ul>
+        <h3 data-i18n="menu.cold">Caffè — Kalt</h3>
+        <ul>
+          <li><span>Iced Cappuccino</span><b>3,60&nbsp;€</b></li>
+          <li><span>Iced Latte Macchiato</span><b>4,20&nbsp;€</b></li>
+          <li><span>Caffe Lemon</span><b>4,60&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.affogato">Affogato — Tartufo-Eis mit Espresso</span><b>4,90&nbsp;€</b></li>
+        </ul>
+        <h3 data-i18n="menu.breakfast">Frühstück — Colazione</h3>
+        <ul>
+          <li><span data-i18n="menu.i.breakfast">Cappuccino oder Caffe Crema · Cornetto oder Butterbreze · frisch gepresster Orangensaft</span><b>9,30&nbsp;€</b></li>
+        </ul>
+      </div>
+      <div class="menu-card reveal">
+        <h3 data-i18n="menu.drinks">Getränke</h3>
+        <ul>
+          <li><span>Pellegrino / Panna &nbsp;0,25&nbsp;l / 0,5&nbsp;l</span><b>3,20 / 4,40&nbsp;€</b></li>
+          <li><span>Lemon Soda / Oran Soda / Mojito Soda</span><b>3,20&nbsp;€</b></li>
+          <li><span>Cola / Cola Zero</span><b>3,20&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.eistee">Eistee — Zitrone / Pfirsich</span><b>3,20&nbsp;€</b></li>
+          <li><span>Sanbitter / Crodino</span><b>3,80&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.oj">Orangensaft — frisch gepresst</span><b>3,90&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.pago">Pago Saft — verschiedene Sorten</span><b>3,40&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.schorle">Apfelschorle / Johannisbeerschorle</span><b>3,50&nbsp;€</b></li>
+        </ul>
+        <h3 data-i18n="menu.alcohol">Alkoholisches</h3>
+        <ul>
+          <li><span>Lugana &nbsp;0,1&nbsp;l</span><b>4,50&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.housewine">Hauswein &nbsp;0,1&nbsp;l</span><b>3,90&nbsp;€</b></li>
+          <li><span>Prosecco Valdo &nbsp;0,1&nbsp;l</span><b>4,00&nbsp;€</b></li>
+          <li><span data-i18n="menu.i.beer">Moretti Bier / Radler / alkoholfrei &nbsp;0,33&nbsp;l</span><b>3,70&nbsp;€</b></li>
+        </ul>
+        <h3 data-i18n="menu.spritz">Unsere Spritz</h3>
+        <ul>
+          <li><span>Aperol / Aperol Mango / Rosato / Limoncello / Sarti / Campari / Toco Rosso / Hugo</span><b>7,20&nbsp;€</b></li>
+        </ul>
+        <h3 data-i18n="menu.spritz0">Spritz — alkoholfrei</h3>
+        <ul>
+          <li><span data-i18n="menu.i.spritz0list">Arancia / Sanbitter / Crodino — jeweils mit Tonic Water</span><b>7,20&nbsp;€</b></li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-note reveal" data-i18n="menu.note">An unserer Theke gibt es verschiedene Kuchen — auch glutenfrei und vegan — sowie viele leckere italienische Gebäcke. Für Hinweise zu Allergenen wenden Sie sich bitte an unser Personal.</p>
+  </section>
+
+  <!-- ============ STORY / VALUES ============ -->
+  <section class="values" id="story">
+    <div class="value reveal">
+      <figure class="value-img"><img src="images/gallery/roast.jpg" alt="Frisch geröstete Bohnen in der Kühlschale der Rösterei" loading="lazy" /></figure>
+      <h3>La torrefazione</h3>
+      <p data-i18n="story.roast">Unsere Bohnen reisen nie weit. Sie werden von der Familienrösterei Basoni im Allgäu geröstet — ein kleiner Familienbetrieb seit 1998 — und jede Röstung, die wir ausschenken, gibt es direkt am Tresen zu kaufen, mit ehrlicher Beratung fürs Brühen zu Hause.</p>
+    </div>
+    <div class="value reveal">
+      <figure class="value-img"><img src="images/gallery/espresso.jpg" alt="Espresso läuft aus dem Siebträger in eine weiße Tasse" loading="lazy" /></figure>
+      <h3>L'espresso</h3>
+      <p data-i18n="story.espresso">Gezogen auf die italienische Art: kurz, süß, ohne Eile. Wir stellen die Mühlen jeden Morgen neu ein und gießen unsere Milch mit Sorgfalt — ein Shot, der nicht stimmt, landet im Ausguss, nicht in Ihrer Tasse. Manche sagen, es sei der beste Kaffee zwischen München und Mailand. Wir nennen es einfach fatto bene.</p>
+    </div>
+    <div class="value reveal">
+      <figure class="value-img"><img src="images/gallery/pastry.jpg" alt="Cornetto, Espresso und Amaretti im Morgenlicht" loading="lazy" /></figure>
+      <h3>La dolce vita</h3>
+      <p data-i18n="story.dolcevita">Ein Espresso im Stehen an der Bar, ein Cappuccino über einen langen Vormittag, ein Panino am Mittag, etwas Süßes um vier. Keine Eile, kein To-go-Zwang — die italienische Lebensart, zu Hause in Bayern.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOUSE TRADITION ============ -->
+  <section class="tradition">
+    <div class="tradition-inner reveal">
+      <span class="tradition-label">Una tradizione della casa</span>
+      <p><span data-i18n="tradition.text">Der Herr, der im Haus wohnt, zahlt mit seiner Steuer alle Kaffees der Rentner.</span><br /><em>Alla salute!</em></p>
+    </div>
+  </section>
+
+  <!-- ============ MOMENTI — real photos ============ -->
+  <section class="moments" id="moments">
+    <header class="section-head reveal">
+      <h2>Momenti</h2>
+      <p data-i18n="moments.sub">Echte Tage im Lucca — das Team, die Terrasse, der Platz.</p>
+    </header>
+    <div class="moments-grid" id="moments-grid"><!-- populated from gallery-manifest.js --></div>
+  </section>
+
+  <!-- ============ FÜSSEN ============ -->
+  <section class="fuessen" id="fuessen">
+    <div class="fuessen-inner">
+      <header class="section-head reveal">
+        <h2>Nel cuore di Füssen</h2>
+        <p data-i18n="fuessen.sub">Unsere kleine Ecke in einer der geschichtsträchtigsten Städte Bayerns.</p>
+      </header>
+      <div class="fuessen-cols">
+        <p class="reveal" data-i18n="fuessen.p1">Füssen empfängt seit zweitausend Jahren Reisende. Die Römer kamen über die Via Claudia Augusta, ihre große Straße über die Alpen; um 830 entstand das Kloster St. Mang am Lech, und die Stadt wuchs in seinem Schatten unter dem Hohen Schloss, der Sommerresidenz der Fürstbischöfe.</p>
+        <p class="reveal" data-i18n="fuessen.p2">Im 16. Jahrhundert wurde Füssen zur Wiege des europäischen Lauten- und Geigenbaus — seine Meister belieferten die Höfe des Kontinents, und ihr Handwerk hallt noch heute durch die Gassen der Altstadt. Heute ist Bayerns höchstgelegene Stadt das südliche Tor der Romantischen Straße, wo die Alpen beginnen und die Königsschlösser Neuschwanstein und Hohenschwangau einen Steinwurf entfernt liegen.</p>
+        <p class="reveal" data-i18n="fuessen.p3">Unser Café liegt mittendrin, in der Ritterstraße in der Fußgängerzone — fünf Minuten vom Kloster, ein kurzer Spaziergang vom Lech und genau einen perfekten Espresso von überall, wohin Ihr Tag Sie führt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit" id="visit">
+    <div class="visit-inner reveal">
+      <img class="visit-logo" src="images/logo.jpeg" alt="Caffè Lucca Füssen" />
+      <h2>Benvenuti</h2>
+      <p class="hours"><span data-i18n="visit.hours">Mo–Sa 8:00–18:00 &nbsp;·&nbsp; So 9:00–16:00</span></p>
+      <p class="address">Ritterstraße 9 · 87629 Füssen<br />
+        <a href="tel:+4983623001030">+49 8362 300 10 30</a> · <a href="mailto:caffe@lucca-fuessen.de">caffe@lucca-fuessen.de</a></p>
+      <p class="family" data-i18n="visit.family">Teil der Basoni-Familie — mit dem Caffè Roma in Kempten und dem Caffè Torino in Marktoberdorf.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Caffè Lucca · Füssen</span>
+    <span data-i18n="footer.tag">In Italien inspiriert — im Allgäu zu Hause.</span>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+  <script src="gallery-manifest.js"></script>
+  <script src="translations.js"></script>
+  <script>
+    // Hero scrub — 181 WebP frames from the Seedance 2.0 1080p pour clip (v2: cache-bust after frame swap).
+    window.SCRUB_SECTIONS = [{
+      section: "#hero",
+      frameCount: 181,
+      bg: "#fdfbf6",
+      framePath: (i) => `frames/hero/frame_${String(i).padStart(4, "0")}.webp?v=2`
+    }];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Momenti — real café photos, masonry columns at natural aspect
+      const mGrid = document.getElementById("moments-grid");
+      const moments = window.MOMENTS || [];
+      if (!moments.length) { document.getElementById("moments").style.display = "none"; }
+      moments.forEach((it) => {
+        const fig = document.createElement("figure");
+        fig.className = "moments-item reveal";
+        fig.innerHTML = `<img src="images/moments/${it.src}" alt="${it.alt || "Caffè Lucca"}" loading="lazy" />` +
+                        (it.caption ? `<figcaption>${it.caption}</figcaption>` : "");
+        mGrid.appendChild(fig);
+      });
+
+      // Language switcher — dictionaries in translations.js
+      const buttons = document.querySelectorAll(".lang-switch button");
+      function setLang(lang) {
+        const dict = window.I18N[lang] || {};
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const t = dict[el.dataset.i18n];
+          if (t !== undefined) el.innerHTML = t;
+        });
+        document.documentElement.lang = lang;
+        buttons.forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
+        try { localStorage.setItem("lucca-lang", lang); } catch (e) {}
+      }
+      buttons.forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
+      let saved = "de";
+      try { saved = localStorage.getItem("lucca-lang") || "de"; } catch (e) {}
+      if (saved !== "de") setLang(saved);
+    });
+  </script>
+  <script src="scroll-cinematic.js"></script>
+</body>
+</html>
