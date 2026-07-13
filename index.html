@@ -26,7 +26,10 @@
   <!-- ============ CINEMATIC HERO — scroll-scrubbed pour ============ -->
   <section class="cinematic" id="hero">
     <div class="sticky">
-      <img class="hero-poster" src="images/hero-poster.jpg?v=5" alt="Milch wird bei Caffè Lucca in einen Cappuccino gegossen" onerror="this.style.visibility='hidden'" />
+      <picture>
+        <source media="(orientation: portrait)" srcset="images/hero-poster-m.jpg?v=1" />
+        <img class="hero-poster" src="images/hero-poster.jpg?v=6" alt="Milch wird bei Caffè Lucca in einen Cappuccino gegossen" onerror="this.style.visibility='hidden'" />
+      </picture>
       <canvas></canvas>
       <div class="vignette"></div>
       <h1 class="sr-only">Caffè Lucca — Füssen</h1>
@@ -187,12 +190,14 @@
   <script src="gallery-manifest.js"></script>
   <script src="translations.js"></script>
   <script>
-    // Hero scrub — 181 WebP frames from the Seedance 2.0 1080p pour clip (v2: cache-bust after frame swap).
+    // Hero scrub — 181 WebP frames from the Seedance 2.0 4K pour clip.
+    // Portrait screens get a dedicated 9:16 center-crop set at full height (no upscaling on phones).
+    const HERO_DIR = matchMedia("(orientation: portrait)").matches ? "frames/hero-m" : "frames/hero";
     window.SCRUB_SECTIONS = [{
       section: "#hero",
       frameCount: 181,
       bg: "#fdfbf6",
-      framePath: (i) => `frames/hero/frame_${String(i).padStart(4, "0")}.webp?v=3`
+      framePath: (i) => `${HERO_DIR}/frame_${String(i).padStart(4, "0")}.webp?v=4`
     }];
 
     document.addEventListener("DOMContentLoaded", () => {
