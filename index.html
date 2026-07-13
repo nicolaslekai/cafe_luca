@@ -10,8 +10,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="topbar">
+  <nav class="topbar" id="topbar">
     <a class="brand" href="#top"><img src="images/logo.jpeg" alt="Caffè Lucca Füssen — Basoni" /></a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <span class="topbar-right">
       <a href="#menu" data-i18n="nav.menu">Karte</a><a href="#story" data-i18n="nav.story">Story</a><a href="#moments" data-i18n="nav.moments">Momenti</a><a href="#fuessen">Füssen</a><a href="#visit" data-i18n="nav.visit">Besuch</a>
       <span class="lang-switch" role="group" aria-label="Sprache / Language / Lingua">
@@ -221,6 +224,17 @@
       let saved = "de";
       try { saved = localStorage.getItem("lucca-lang") || "de"; } catch (e) {}
       if (saved !== "de") setLang(saved);
+
+      // Mobile burger menu
+      const topbar = document.getElementById("topbar");
+      const toggle = topbar.querySelector(".nav-toggle");
+      toggle.addEventListener("click", () => {
+        const open = topbar.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open);
+      });
+      topbar.querySelectorAll(".topbar-right a").forEach((a) =>
+        a.addEventListener("click", () => { topbar.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); })
+      );
     });
   </script>
   <script src="scroll-cinematic.js"></script>
