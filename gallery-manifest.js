@@ -3,7 +3,7 @@
 // Momenti — real photos from the café (images/moments/)
 window.MOMENTS = [
   { src: "facade.jpg",             alt: "Caffè Lucca façade with terrace seating and fairy lights", caption: "Ritterstraße, Füssen" },
-  { src: "team.jpg",               alt: "The Caffè Lucca team gathered in the café", caption: "La famiglia — the Lucca team" },
+  { src: "team.jpg?v=2",           alt: "The Caffè Lucca team gathered in the café", caption: "La famiglia — the Lucca team" },
   { src: "breakfast-tray.jpg",     alt: "Cappuccino, espresso and fresh orange juice on the morning square", caption: "Colazione on the square" },
   { src: "bar.jpg",                alt: "The wooden bar with chandeliers, pastries and the espresso machine", caption: "The bar" },
   { src: "aperitivo.jpg",          alt: "Spritz, gin tonic, olives and grissini on the terrace", caption: "Aperitivo hour" },
